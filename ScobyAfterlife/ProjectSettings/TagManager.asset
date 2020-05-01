@@ -41,3 +41,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 3791678195
+    locked: 0
+  - name: Scoby
+    uniqueID: 2517459771
+    locked: 0
+  - name: Food
+    uniqueID: 3396385975
+    locked: 0
+  - name: UI
+    uniqueID: 2806882909
+    locked: 0
+  - name: Player
+    uniqueID: 792971545
+    locked: 0
