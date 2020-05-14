@@ -5,12 +5,11 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public CharacterController2D controller;
-    Animator anim;
+    public Animator anim;
 
     public float runSpeed = 40f;
     float horizontalMove = 0f;
     bool jump = false;
-    bool crouch = false;
 
     // Update is called once per frame
     void Update()
@@ -30,26 +29,18 @@ public class Player : MonoBehaviour
         if (Input.GetButtonDown("Jump")) 
         {
             jump = true;
-            anim.SetBool("Jumping", true);
-        }
-        if (Input.GetButtonDown("Crouch"))
-        {
-            crouch = true;
-        }
-        else if (Input.GetButtonUp("Crouch")) 
-        {
-            crouch = false;
+            anim.SetBool("jumping", true);
         }
     }
 
     private void FixedUpdate()
     {
-        controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
+        controller.Move(horizontalMove * Time.fixedDeltaTime, jump);
         jump = false; 
     }
 
     public void OnLanding()
     {
-        anim.SetBool("Jumping", false);
+        anim.SetBool("jumping", false);
     }
 }
