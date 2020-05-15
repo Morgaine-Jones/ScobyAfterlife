@@ -7,19 +7,15 @@ public class Food : MonoBehaviour
     // Varaibles
     bool glowOn = false;
     public GameObject FoodGlow;
+    public GameObject player;
 
     bool holdingFood = false;
     public Sprite FoodInHand;
 
-    void Start()
-    {
-        
-    }
+    // Start & Updates
     private void FixedUpdate()
     {
         Glow();
-
-        Debug.Log(holdingFood);
     }
 
     // Change sprites
@@ -32,13 +28,13 @@ public class Food : MonoBehaviour
         }
         else
         {
-            FoodGlow.GetComponent<Animator>().enabled = false;
             FoodGlow.SetActive(false);
+            FoodGlow.GetComponent<Animator>().enabled = false;
         }
     }
     private void CollectedFood() 
     {
-        GetComponent<SpriteRenderer>().sprite = FoodInHand;
+        player.GetComponent<SpriteRenderer>().sprite = FoodInHand;
     }
 
     // Collects Food
