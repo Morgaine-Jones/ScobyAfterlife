@@ -104,17 +104,17 @@ public class Scoby : MonoBehaviour
     // Slowly decreases lives over time
     IEnumerator LifeTimer()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(8);
         if (scobyAlive == true) 
         {
             currentHearts = currentHearts - 1;
         }
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(8);
         if (scobyAlive == true)
         {
             currentHearts = currentHearts - 1;
         }
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(8);
         if (scobyAlive == true)
         {
             currentHearts = currentHearts - 1;
