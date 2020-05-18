@@ -880,6 +880,7 @@ GameObject:
   m_Component:
   - component: {fileID: 472291970}
   - component: {fileID: 472291971}
+  - component: {fileID: 472291972}
   m_Layer: 0
   m_Name: Cloud 4
   m_TagString: Untagged
@@ -951,6 +952,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &472291972
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472291969}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f2b9d70fef69bf74e9eb9a278ce00175, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &677541951
 GameObject:
   m_ObjectHideFlags: 0
@@ -1027,6 +1047,7 @@ GameObject:
   m_Component:
   - component: {fileID: 706858225}
   - component: {fileID: 706858226}
+  - component: {fileID: 706858227}
   m_Layer: 0
   m_Name: Cloud 1
   m_TagString: Untagged
@@ -1098,6 +1119,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &706858227
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706858224}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 721c75c96e3f02348ab8ce089ffb0e01, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &788635228
 GameObject:
   m_ObjectHideFlags: 0
@@ -1221,6 +1261,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1263410797}
   - component: {fileID: 1263410798}
+  - component: {fileID: 1263410799}
   m_Layer: 0
   m_Name: Cloud 2
   m_TagString: Untagged
@@ -1292,6 +1333,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1263410799
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263410796}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 71a3087f77f74c84f8760683c35dcbdb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &1294942262 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2432148844345371023, guid: 224ff1feebe7f4540aacbd41e867827b,
@@ -1308,6 +1368,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1475462392}
   - component: {fileID: 1475462393}
+  - component: {fileID: 1475462394}
   m_Layer: 0
   m_Name: Cloud 3
   m_TagString: Untagged
@@ -1379,6 +1440,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1475462394
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475462391}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ed4172f3077446440b399fc7d546af40, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1849066114
 GameObject:
   m_ObjectHideFlags: 0
