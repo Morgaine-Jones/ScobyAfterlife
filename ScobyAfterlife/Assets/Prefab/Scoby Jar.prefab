@@ -208,7 +208,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5108229f277f4a4896c31a1eaf9a6d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  glowOn: 0
   ScobyGlow: {fileID: 3616945706167387457}
+  scobyAlive: 1
+  currentHearts: 3
   s_ScobyDead: {fileID: 2762584681626452761, guid: 3b17b7f9952249a48ba1066d08e4e59e,
     type: 3}
   heartFull: {fileID: -5160877947952575258, guid: cedfee684d8880a4388ede3148392628,

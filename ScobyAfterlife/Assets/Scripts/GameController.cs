@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameController : MonoBehaviour
 {
     // Variables
     public GameObject Scoby1;
@@ -16,16 +16,16 @@ public class GameManager : MonoBehaviour
     {
         CheckScoby();
 
-        if (scobiesDead >= 3) 
+        if (scobiesDead >= 3)
         {
             GameOver();
         }
     }
 
-    void CheckScoby() 
+    void CheckScoby()
     {
         scobyDead = Scoby1.GetComponent<Scoby>().scobyAlive;
-        if (scobyDead == true) 
+        if (scobyDead == true)
         {
             scobiesDead = scobiesDead + 1;
             scobyDead = false;
@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void GameOver() 
+    void GameOver()
     {
         Application.Quit();
     }
