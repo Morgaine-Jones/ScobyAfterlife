@@ -12,8 +12,6 @@ public class PlayerMovement : MonoBehaviour
     bool isJumping;
     bool facingRight;
 
-    public GameObject player;
-
     // Start & Updates
     void Start()
     {
@@ -30,6 +28,15 @@ public class PlayerMovement : MonoBehaviour
 
         HandleMovement(horizontal);
         Flip(horizontal);
+
+        if (horizontal != 0 && !isJumping)
+        {
+            GetComponent<Animator>().SetBool("Walking", true);
+        }
+        else if (horizontal == 0 && !isJumping)
+        {
+            GetComponent<Animator>().SetBool("Walking", false);
+        }
     }
 
     // Moves player
@@ -50,10 +57,12 @@ public class PlayerMovement : MonoBehaviour
     }
     void Jump()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && !isJumping)
+        if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && !isJumping)
         {
             isJumping = true;
             rb.AddForce(new Vector2(rb.velocity.x, jumpForce));
+
+            GetComponent<Animator>().SetBool("Jumping", true);
         }
     }
 
@@ -65,6 +74,8 @@ public class PlayerMovement : MonoBehaviour
             isJumping = false;
 
             rb.velocity = Vector2.zero;
+
+            GetComponent<Animator>().SetBool("Jumping", false);
         }
     }
 }

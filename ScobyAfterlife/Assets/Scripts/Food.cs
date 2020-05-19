@@ -5,21 +5,28 @@ using UnityEngine;
 public class Food : MonoBehaviour
 {
     // Varaibles
-    bool glowOn = false;
-    public GameObject FoodGlow;
     public GameObject player;
+    public GameObject FoodGlow;
 
-    bool holdingFood = false;
     public Sprite FoodInHand;
 
+    bool glowOn = false;
+    bool holdingFood = false;
+
     // Start & Updates
-    private void FixedUpdate()
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Return))
+        {
+            CollectFood();
+        }
+    }
+    void FixedUpdate()
     {
         Glow();
     }
 
-    // Change sprites
-    private void Glow()
+    void Glow()
     {
         if (glowOn == true)
         {
@@ -32,32 +39,27 @@ public class Food : MonoBehaviour
             FoodGlow.GetComponent<Animator>().enabled = false;
         }
     }
-    private void CollectedFood() 
-    {
-        player.GetComponent<SpriteRenderer>().sprite = FoodInHand;
-    }
-
-    // Collects Food
-    private void OnMouseDown()
+    void CollectFood() 
     {
         if (glowOn == true && holdingFood == false) 
         {
+            player.GetComponent<Animator>().SetBool("Holding_Food", true);
+
             holdingFood = true;
-            CollectedFood();
         }
     }
 
     // Checks if the player is within the vicinity
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject == player)
         {
             glowOn = true;
         }
     }
     void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject == player)
         {
             glowOn = false;
         }

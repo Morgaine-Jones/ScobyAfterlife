@@ -5,29 +5,29 @@ using UnityEngine;
 public class Scoby : MonoBehaviour
 {
     // Variables
-    public bool glowOn = false;
+    public GameObject player;
     public GameObject ScobyGlow;
-
-    public bool scobyAlive = true;
-    public int currentHearts = 3;
+    public GameObject Heart1;
+    public GameObject Heart2;
+    public GameObject Heart3;
 
     public Sprite s_ScobyDead;
     public Sprite heartFull;
     public Sprite heartEmpty;
 
-    public GameObject Heart1;
-    public GameObject Heart2;
-    public GameObject Heart3;
+    public bool scobyAlive = true;
+    bool glowOn = false;
+    int currentHearts = 3;
 
     // Start & Updates
-    private void FixedUpdate()
+    void FixedUpdate()
     {
         Glow();
         HeartsChange();
     }
 
     // Change sprites
-    private void Glow() 
+    void Glow() 
     {
         if (glowOn == true)
         {
@@ -72,7 +72,7 @@ public class Scoby : MonoBehaviour
     }
 
     // Start/stop timer
-    private void OnMouseDown()
+    void OnMouseDown()
     {
         if (scobyAlive == true)
         {
@@ -80,7 +80,7 @@ public class Scoby : MonoBehaviour
             currentHearts = 3;
         }
     }
-    private void OnMouseUp()
+    void OnMouseUp()
     {
         StartCoroutine(LifeTimer());
     }
