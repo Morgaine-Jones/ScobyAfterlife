@@ -33,6 +33,13 @@ public class Scoby : MonoBehaviour
         {
             FeedScoby();
         }
+
+        if (scobyAlive == false) 
+        {
+            glowOn = false;
+            ScobyGlow.GetComponent<Animator>().enabled = false;
+            ScobyGlow.SetActive(false);
+        }
     }
     void FixedUpdate()
     {
@@ -80,7 +87,6 @@ public class Scoby : MonoBehaviour
         else if (currentHearts == 0)
         {
             scobyAlive = false;
-            glowOn = false;
             GetComponent<SpriteRenderer>().sprite = s_ScobyDead;
 
             Heart1.GetComponent<SpriteRenderer>().sprite = heartEmpty;
@@ -117,7 +123,7 @@ public class Scoby : MonoBehaviour
     // Checks if the player is within the vicinity
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject == player)
+        if (collision.gameObject == player && scobyAlive == true)
         {
             glowOn = true;
         }

@@ -61,6 +61,7 @@ public class Food : MonoBehaviour
             if (InstructionsVisible < 2)
             {
                 Instructions.SetActive(true);
+                InstructionsVisible = InstructionsVisible + 1;
             }
             else 
             {

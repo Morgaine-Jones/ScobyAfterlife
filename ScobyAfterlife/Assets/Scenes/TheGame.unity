@@ -796,7 +796,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InputBox: {fileID: 137753565}
-  ScobyName: {fileID: 0}
+  ScobyName: {fileID: 1301157335}
 --- !u!1 &145742954
 GameObject:
   m_ObjectHideFlags: 0
@@ -831,7 +831,7 @@ RectTransform:
   - {fileID: 1301157334}
   - {fileID: 782090067}
   m_Father: {fileID: 712681722}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2057,7 +2057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InputBox: {fileID: 361452460}
-  ScobyName: {fileID: 0}
+  ScobyName: {fileID: 782090068}
 --- !u!1 &393763634
 GameObject:
   m_ObjectHideFlags: 0
@@ -3145,8 +3145,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1866365140}
   - {fileID: 145742955}
+  - {fileID: 1866365140}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4122,13 +4122,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1866365140}
   - component: {fileID: 1866365139}
+  - component: {fileID: 1866365141}
   m_Layer: 0
   m_Name: Food Interact text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1866365139
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4187,12 +4188,31 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1866365138}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.6, y: -0.4, z: 0}
+  m_LocalPosition: {x: -10.6, y: -0.63, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 712681722}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1866365141
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866365138}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6772680e4fd4d964b98001b6de2c893a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1870608650
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5202,6 +5222,27 @@ PrefabInstance:
     - target: {fileID: 6984697788872663472, guid: 224ff1feebe7f4540aacbd41e867827b,
         type: 3}
       propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984697788872663472, guid: 224ff1feebe7f4540aacbd41e867827b,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 470c284737ef32e4b94609b82d3bd297,
+        type: 3}
+    - target: {fileID: 6984697788872663472, guid: 224ff1feebe7f4540aacbd41e867827b,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2.072
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984697788872663472, guid: 224ff1feebe7f4540aacbd41e867827b,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984697788872663472, guid: 224ff1feebe7f4540aacbd41e867827b,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
