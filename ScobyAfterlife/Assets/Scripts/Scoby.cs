@@ -102,24 +102,15 @@ public class Scoby : MonoBehaviour
         }
     }
 
-    // Slowly decreases lives over time //yield return null;
+    // Slowly decreases lives over time
     IEnumerator LifeTimer()
     {
         while (scobyAlive == true)
         {
-            yield return new WaitForSeconds(8);
+            yield return new WaitForSeconds(2);
             currentHearts = currentHearts - 1;
         }
-        //if (scobyAlive == true)
-        //{
-        //    yield return new WaitForSeconds(8);
-        //    currentHearts = currentHearts - 1;
-        //}
-        //if (scobyAlive == true)
-        //{
-        //    yield return new WaitForSeconds(8);
-        //    currentHearts = currentHearts - 1;
-        //}
+        //yield return null;
     }
 
     // Checks if the player is within the vicinity

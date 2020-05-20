@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9377e7a342816ba4da13fcd0cab9d2d4
+guid: 577d4724d05760a4394e02cbfa389379
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -26,6 +26,9 @@ TextureImporter:
   - first:
       213: -242694813871409428
     second: Hermit with Food_7
+  - first:
+      213: -2373136953429742470
+    second: Hermit with Food_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -210,8 +213,8 @@ TextureImporter:
       name: Hermit with Food_4
       rect:
         serializedVersion: 2
-        x: 52
-        y: 405
+        x: 54
+        y: 408
         width: 305
         height: 410
       alignment: 7
@@ -228,33 +231,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hermit with Food_5
-      rect:
-        serializedVersion: 2
-        x: 59
-        y: 0
-        width: 315
-        height: 408
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 29c72cd4e7bd49f10800000000000000
-      internalID: 2275685047245896850
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Hermit with Food_6
       rect:
         serializedVersion: 2
-        x: 460
-        y: 406
-        width: 304
+        x: 475
+        y: 408
+        width: 297
         height: 410
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -273,8 +255,8 @@ TextureImporter:
       name: Hermit with Food_7
       rect:
         serializedVersion: 2
-        x: 883
-        y: 405
+        x: 873
+        y: 408
         width: 301
         height: 410
       alignment: 7
@@ -290,10 +272,31 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Hermit with Food_8
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 314
+        height: 407
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7ca777a38ce01fd0800000000000000
+      internalID: -2373136953429742470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 818b153c5e7789346a02477c2ced02a5
     internalID: 0
     vertices: []
     indices: 

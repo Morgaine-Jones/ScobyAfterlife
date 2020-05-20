@@ -249,7 +249,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e95d1e2bfda15624899c478b19886a91, type: 3}
+  m_audioClip: {fileID: 8300000, guid: eebe9ed573aec924b9d9af55b6e1d494, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1123,7 +1123,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 604192576}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2098906330}
+        m_MethodName: RestartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &604192576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2255,7 +2266,7 @@ SpriteRenderer:
   m_SortingLayerID: 792971545
   m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: 6556713491997736388, guid: 2cb7fc18e168c1b4baede0e4fd5373ab,
+  m_Sprite: {fileID: 4184532986871271341, guid: eeb93ec2b7ce56044bfb6d57e1d0397c,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -2498,9 +2509,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e1876d5f5eede842b574e4dbe705589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1944963585}
   Scoby1: {fileID: 1482669271}
   Scoby2: {fileID: 307544081}
   Scoby3: {fileID: 1870608652}
+  Start_Menu: {fileID: 898694941}
+  GameOver_Menu: {fileID: 640844193}
 --- !u!1 &2125596280
 GameObject:
   m_ObjectHideFlags: 0
@@ -2514,7 +2528,7 @@ GameObject:
   - component: {fileID: 2125596283}
   - component: {fileID: 2125596282}
   m_Layer: 5
-  m_Name: Restart_btn
+  m_Name: Start_btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2581,7 +2595,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2125596283}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2098906330}
+        m_MethodName: PlayGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2125596283
 MonoBehaviour:
   m_ObjectHideFlags: 0
