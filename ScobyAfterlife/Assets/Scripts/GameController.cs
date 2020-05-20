@@ -12,6 +12,7 @@ public class GameController : MonoBehaviour
     public GameObject Scoby3;
 
     public GameObject Start_Menu;
+    public GameObject Naming_Menu;
     public GameObject GameOver_Menu;
     public GameObject Audio;
 
@@ -24,6 +25,7 @@ public class GameController : MonoBehaviour
     void Awake()
     {
         Start_Menu.SetActive(true);
+        Naming_Menu.SetActive(false);
         GameOver_Menu.SetActive(false);
         Audio.SetActive(false);
 
@@ -67,9 +69,15 @@ public class GameController : MonoBehaviour
     }
 
     // Button Clicks
-    public void PlayGame() 
+    public void Naming()
     {
         Start_Menu.SetActive(false);
+        Naming_Menu.SetActive(true);
+    }
+    public void PlayGame() 
+    {
+        Naming_Menu.SetActive(false);
+
         Audio.SetActive(true);
 
         Play();

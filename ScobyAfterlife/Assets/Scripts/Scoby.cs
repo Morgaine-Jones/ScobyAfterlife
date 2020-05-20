@@ -80,6 +80,7 @@ public class Scoby : MonoBehaviour
         else if (currentHearts == 0)
         {
             scobyAlive = false;
+            glowOn = false;
             GetComponent<SpriteRenderer>().sprite = s_ScobyDead;
 
             Heart1.GetComponent<SpriteRenderer>().sprite = heartEmpty;

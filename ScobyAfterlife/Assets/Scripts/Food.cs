@@ -9,8 +9,6 @@ public class Food : MonoBehaviour
     public GameObject FoodGlow;
     public GameObject Instructions;
 
-    public Sprite FoodInHand;
-
     public bool holdingFood = false;
     bool glowOn = false;
 

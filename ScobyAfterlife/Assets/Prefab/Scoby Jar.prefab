@@ -209,11 +209,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  Food: {fileID: 0}
   ScobyGlow: {fileID: 3616945706167387457}
   Heart1: {fileID: 1359075028284458981}
   Heart2: {fileID: 7454843027050087801}
   Heart3: {fileID: 4729832969646944885}
-  Food: {fileID: 0}
   s_ScobyDead: {fileID: 2762584681626452761, guid: 3b17b7f9952249a48ba1066d08e4e59e,
     type: 3}
   heartFull: {fileID: -5160877947952575258, guid: cedfee684d8880a4388ede3148392628,
@@ -292,13 +292,12 @@ SpriteRenderer:
   m_SortingLayerID: -1777507525
   m_SortingLayer: 2
   m_SortingOrder: 1
-  m_Sprite: {fileID: 4170453036784835989, guid: 470c284737ef32e4b94609b82d3bd297,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 470c284737ef32e4b94609b82d3bd297, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.112, y: 1.14}
+  m_Size: {x: 2.072, y: 1.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
