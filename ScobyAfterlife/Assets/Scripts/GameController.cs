@@ -8,10 +8,15 @@ public class GameController : MonoBehaviour
     public GameObject Scoby1;
     public GameObject Scoby2;
     public GameObject Scoby3;
+
     bool scobyDead = false;
     int scobiesDead = 0;
 
     // Start & Updates
+    void Awake()
+    {
+        //GameObject.Find("Start_Canvas")
+    }
     void Update()
     {
         CheckScoby();
@@ -22,6 +27,7 @@ public class GameController : MonoBehaviour
         }
     }
 
+    // Functions
     void CheckScoby()
     {
         scobyDead = Scoby1.GetComponent<Scoby>().scobyAlive;
@@ -45,7 +51,6 @@ public class GameController : MonoBehaviour
             scobyDead = false;
         }
     }
-
     void GameOver()
     {
         Application.Quit();

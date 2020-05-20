@@ -6,6 +6,7 @@ public class Scoby : MonoBehaviour
 {
     // Variables
     public GameObject player;
+    public GameObject Food;
     public GameObject ScobyGlow;
     public GameObject Heart1;
     public GameObject Heart2;
@@ -19,14 +20,30 @@ public class Scoby : MonoBehaviour
     bool glowOn = false;
     int currentHearts = 3;
 
+    private Coroutine HeartTimer;
+
     // Start & Updates
+    void Awake()
+    {
+        HeartTimer = StartCoroutine(LifeTimer());
+    }
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Return))
+        {
+            FeedScoby();
+        }
+    }
     void FixedUpdate()
     {
-        Glow();
-        HeartsChange();
+        if (scobyAlive == true)
+        {
+            Glow();
+            HeartsChange();
+        }
     }
 
-    // Change sprites
+    // Functions
     void Glow() 
     {
         if (glowOn == true)
@@ -70,54 +87,54 @@ public class Scoby : MonoBehaviour
             Heart3.GetComponent<SpriteRenderer>().sprite = heartEmpty;
         }
     }
-
-    // Start/stop timer
-    void OnMouseDown()
+    void FeedScoby() 
     {
-        if (scobyAlive == true)
+        if (glowOn == true && scobyAlive == true && currentHearts < 3 && Food.GetComponent<Food>().holdingFood == true)
         {
-            StopCoroutine(LifeTimer());
+            StopCoroutine(HeartTimer);
+
             currentHearts = 3;
+
+            player.GetComponent<Animator>().SetBool("Holding_Food", false);
+            Food.GetComponent<Food>().holdingFood = false;
+
+            HeartTimer = StartCoroutine(LifeTimer());
         }
     }
-    void OnMouseUp()
+
+    // Slowly decreases lives over time //yield return null;
+    IEnumerator LifeTimer()
     {
-        StartCoroutine(LifeTimer());
+        while (scobyAlive == true)
+        {
+            yield return new WaitForSeconds(8);
+            currentHearts = currentHearts - 1;
+        }
+        //if (scobyAlive == true)
+        //{
+        //    yield return new WaitForSeconds(8);
+        //    currentHearts = currentHearts - 1;
+        //}
+        //if (scobyAlive == true)
+        //{
+        //    yield return new WaitForSeconds(8);
+        //    currentHearts = currentHearts - 1;
+        //}
     }
 
     // Checks if the player is within the vicinity
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject == player)
         {
             glowOn = true;
         }
     }
     void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject == player)
         {
             glowOn = false;
-        }
-    }
-
-    // Slowly decreases lives over time
-    IEnumerator LifeTimer()
-    {
-        yield return new WaitForSeconds(8);
-        if (scobyAlive == true) 
-        {
-            currentHearts = currentHearts - 1;
-        }
-        yield return new WaitForSeconds(8);
-        if (scobyAlive == true)
-        {
-            currentHearts = currentHearts - 1;
-        }
-        yield return new WaitForSeconds(8);
-        if (scobyAlive == true)
-        {
-            currentHearts = currentHearts - 1;
         }
     }
 }

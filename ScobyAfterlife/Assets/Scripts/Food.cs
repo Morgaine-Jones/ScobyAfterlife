@@ -10,8 +10,8 @@ public class Food : MonoBehaviour
 
     public Sprite FoodInHand;
 
+    public bool holdingFood = false;
     bool glowOn = false;
-    bool holdingFood = false;
 
     // Start & Updates
     void Update()
@@ -26,6 +26,7 @@ public class Food : MonoBehaviour
         Glow();
     }
 
+    // Functions
     void Glow()
     {
         if (glowOn == true)

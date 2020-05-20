@@ -1,22 +1,31 @@
 fileFormatVersion: 2
-guid: 2cb7fc18e168c1b4baede0e4fd5373ab
+guid: 9377e7a342816ba4da13fcd0cab9d2d4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8821833445918083701
-    second: Hermit Idle 1_0
+      213: 1008596068699688262
+    second: Hermit with Food_0
   - first:
-      213: -5918088795186945702
-    second: Hermit Idle 1_1
+      213: -3269858865973504623
+    second: Hermit with Food_1
   - first:
-      213: 3256955727246213667
-    second: Hermit Idle 1_2
+      213: 2775382953474607388
+    second: Hermit with Food_2
   - first:
-      213: -1711700215900613884
-    second: Hermit Idle 1_3
+      213: 4126238879261227647
+    second: Hermit with Food_3
   - first:
-      213: 6556713491997736388
-    second: Hermit Idle 1_4
+      213: -3674610989553617366
+    second: Hermit with Food_4
+  - first:
+      213: 2275685047245896850
+    second: Hermit with Food_5
+  - first:
+      213: -2828898719816334242
+    second: Hermit with Food_6
+  - first:
+      213: -242694813871409428
+    second: Hermit with Food_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -114,106 +123,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hermit Idle 1_0
+      name: Hermit with Food_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 76
+        y: 820
+        width: 281
+        height: 410
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d43bcd7c04ffd00800000000000000
+      internalID: 1008596068699688262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermit with Food_1
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 820
+        width: 281
+        height: 401
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 195dcf39fa02f92d0800000000000000
+      internalID: -3269858865973504623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermit with Food_2
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 820
+        width: 281
+        height: 393
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1947817714248620800000000000000
+      internalID: 2775382953474607388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermit with Food_3
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 820
+        width: 281
+        height: 385
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7a75c02668534930800000000000000
+      internalID: 4126238879261227647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermit with Food_4
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 405
+        width: 305
+        height: 410
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a26f8ef16c8210dc0800000000000000
+      internalID: -3674610989553617366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hermit with Food_5
+      rect:
+        serializedVersion: 2
+        x: 59
         y: 0
-        width: 282
-        height: 415
-      alignment: 9
-      pivot: {x: 0.5, y: 0.015}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 57a8b9b67c27d6a70800000000000000
-      internalID: 8821833445918083701
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hermit Idle 1_1
-      rect:
-        serializedVersion: 2
-        x: 371
-        y: 5
-        width: 284
-        height: 403
-      alignment: 9
+        width: 315
+        height: 408
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a51a9ad9899bedda0800000000000000
-      internalID: -5918088795186945702
+      spriteID: 29c72cd4e7bd49f10800000000000000
+      internalID: 2275685047245896850
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hermit Idle 1_2
+      name: Hermit with Food_6
       rect:
         serializedVersion: 2
-        x: 750
-        y: 2
-        width: 284
-        height: 394
-      alignment: 9
+        x: 460
+        y: 406
+        width: 304
+        height: 410
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3224fa35af7033d20800000000000000
-      internalID: 3256955727246213667
+      spriteID: e544acb3a9bbdb8d0800000000000000
+      internalID: -2828898719816334242
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hermit Idle 1_3
+      name: Hermit with Food_7
       rect:
         serializedVersion: 2
-        x: 1178
-        y: 2
-        width: 284
-        height: 384
-      alignment: 9
+        x: 883
+        y: 405
+        width: 301
+        height: 410
+      alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 403d84df8b1de38e0800000000000000
-      internalID: -1711700215900613884
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hermit Idle 1_4
-      rect:
-        serializedVersion: 2
-        x: 2360
-        y: 0
-        width: 282
-        height: 415
-      alignment: 9
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4cd39889e202efa50800000000000000
-      internalID: 6556713491997736388
+      spriteID: ce67d564a56c1acf0800000000000000
+      internalID: -242694813871409428
       vertices: []
       indices: 
       edges: []
@@ -221,7 +293,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: cc35ea6ca28aa1f409abf97a721ea991
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
