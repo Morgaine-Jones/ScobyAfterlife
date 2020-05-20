@@ -107,7 +107,7 @@ public class Scoby : MonoBehaviour
     {
         while (scobyAlive == true)
         {
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(8);
             currentHearts = currentHearts - 1;
         }
         //yield return null;
