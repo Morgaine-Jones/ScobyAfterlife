@@ -13,6 +13,7 @@ public class GameController : MonoBehaviour
 
     public GameObject Start_Menu;
     public GameObject GameOver_Menu;
+    public GameObject Audio;
 
     bool scoby1Alive = true;
     bool scoby2Alive = true;
@@ -22,10 +23,11 @@ public class GameController : MonoBehaviour
     // Start & Updates
     void Awake()
     {
-        Pause();
-
         Start_Menu.SetActive(true);
         GameOver_Menu.SetActive(false);
+        Audio.SetActive(false);
+
+        Pause();
     }
     void Update()
     {
@@ -58,15 +60,17 @@ public class GameController : MonoBehaviour
     }
     void GameOver()
     {
-        Pause();
-
         GameOver_Menu.SetActive(true);
+        Audio.SetActive(false);
+
+        Pause();
     }
 
     // Button Clicks
     public void PlayGame() 
     {
         Start_Menu.SetActive(false);
+        Audio.SetActive(true);
 
         Play();
     }
