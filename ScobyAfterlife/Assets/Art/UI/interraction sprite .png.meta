@@ -1,13 +1,7 @@
 fileFormatVersion: 2
-guid: 470c284737ef32e4b94609b82d3bd297
+guid: 27b7ea12ad3e9d945891b1a03a8fe50b
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 4170453036784835989
-    second: ScobyJar 3_0
-  - first:
-      213: -2763431723432252426
-    second: ScobyJar 3_0
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -49,10 +43,10 @@ TextureImporter:
   spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 250
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  alignment: 9
+  spritePivot: {x: 0.3, y: 0.46}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 719, z: 726, w: 874}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -115,28 +109,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: ScobyJar 3_0
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 5
-        width: 278
-        height: 285
-      alignment: 9
-      pivot: {x: 0.502, y: 0.499}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6fb66c32d7156a9d0800000000000000
-      internalID: -2763431723432252426
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []

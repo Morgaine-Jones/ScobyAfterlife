@@ -7,11 +7,14 @@ public class Food : MonoBehaviour
     // Varaibles
     public GameObject player;
     public GameObject FoodGlow;
+    public GameObject Instructions;
 
     public Sprite FoodInHand;
 
     public bool holdingFood = false;
     bool glowOn = false;
+
+    int InstructionsVisible = 0;
 
     // Start & Updates
     void Update()
@@ -56,6 +59,15 @@ public class Food : MonoBehaviour
         if (collision.gameObject == player)
         {
             glowOn = true;
+
+            if (InstructionsVisible < 2)
+            {
+                Instructions.SetActive(true);
+            }
+            else 
+            {
+                Instructions.SetActive(false);
+            }
         }
     }
     void OnTriggerExit2D(Collider2D collision)
@@ -63,6 +75,11 @@ public class Food : MonoBehaviour
         if (collision.gameObject == player)
         {
             glowOn = false;
+        }
+
+        if (Instructions.activeInHierarchy == true)
+        {
+            Instructions.SetActive(false);
         }
     }
 }
