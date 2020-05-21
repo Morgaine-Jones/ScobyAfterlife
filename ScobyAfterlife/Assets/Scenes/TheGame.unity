@@ -640,6 +640,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InputBox: {fileID: 128193216}
+  InputText: {fileID: 1523855270}
   ScobyName: {fileID: 1539704093}
 --- !u!1 &137753563
 GameObject:
@@ -796,6 +797,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InputBox: {fileID: 137753565}
+  InputText: {fileID: 396615405}
   ScobyName: {fileID: 1301157335}
 --- !u!1 &145742954
 GameObject:
@@ -1261,7 +1263,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Scoby name...
+  m_Text: Scoby 2
 --- !u!222 &260201932
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1435,7 +1437,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Scoby name...
+  m_Text: Scoby 3
 --- !u!222 &324917222
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2057,6 +2059,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InputBox: {fileID: 361452460}
+  InputText: {fileID: 1742169205}
   ScobyName: {fileID: 782090068}
 --- !u!1 &393763634
 GameObject:
@@ -2511,7 +2514,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Scoby name...
+  m_Text: Scoby 1
 --- !u!222 &460194492
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3219,7 +3222,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: WWWWWWWWWW
+  m_Text: Scoby 3
 --- !u!222 &782090069
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3675,7 +3678,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: WWWWWWWWWW
+  m_Text: Scoby 2
 --- !u!222 &1301157336
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3912,7 +3915,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: WWWWWWWWWW
+  m_Text: Scoby 1
 --- !u!222 &1539704094
 CanvasRenderer:
   m_ObjectHideFlags: 0

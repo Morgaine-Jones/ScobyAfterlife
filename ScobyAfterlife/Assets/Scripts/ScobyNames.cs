@@ -7,10 +7,11 @@ public class ScobyNames : MonoBehaviour
 {
     // Variables
     public InputField InputBox;
+    public Text InputText;
     public Text ScobyName;
 
     // Start & Updates
-    public void Start()
+    public void Update()
     {
         InputBox.onValueChanged.AddListener(delegate { NameChanged(); });
     }
@@ -19,6 +20,6 @@ public class ScobyNames : MonoBehaviour
     public void NameChanged() 
     {
         Debug.Log("hello");
-        ScobyName.text = InputBox.GetComponent<Text>().text;
+        ScobyName.text = InputText.GetComponent<Text>().text;
     }
 }
