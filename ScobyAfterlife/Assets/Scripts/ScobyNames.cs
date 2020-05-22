@@ -19,6 +19,6 @@ public class ScobyNames : MonoBehaviour
     // Functions
     public void NameChanged() 
     {
-        ScobyName.text = InputText.GetComponent<Text>().text;
+        ScobyName.text = InputText.text;
     }
 }
